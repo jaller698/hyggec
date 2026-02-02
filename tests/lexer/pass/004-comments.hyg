@@ -1,0 +1,2 @@
+1 + 2 // @ Invalid if tokenized
+// 1 + 2

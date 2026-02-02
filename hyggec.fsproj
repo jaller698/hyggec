@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- General -->
+    <AssemblyName>hyggec</AssemblyName>
+    <Version>0.0.4</Version>
+    <Description>A didactic compiler for the Hygge programming language.</Description>
+    <Copyright>Copyright 2026 DTU - Technical University of Denmark</Copyright>
+    <Authors>Alceste Scalas</Authors>
+    <OutputType>Exe</OutputType>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <!-- Build settings -->
+    <TargetFramework>net10.0</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/Log.fs" />
+    <Compile Include="src/Lexer.fs" />
+    <Compile Include="src/AST.fs" />
+    <Compile Include="src/ASTUtil.fs" />
+    <Compile Include="src/ParserUtils.fs" />
+    <Compile Include="src/Parser.fs" />
+    <Compile Include="src/Util.fs" />
+    <Compile Include="src/Type.fs" />
+    <Compile Include="src/Typechecker.fs" />
+    <Compile Include="src/PrettyPrinter.fs" />
+    <Compile Include="src/Interpreter.fs" />
+    <Compile Include="src/RISCV.fs" />
+    <Compile Include="src/RISCVCodegen.fs" />
+    <!-- Command line parsing -->
+    <PackageReference Include="CommandLineParser.FSharp" Version="2.9.1" />
+    <Compile Include="src/CmdLine.fs" />
+    <Compile Include="src/RARS.fs" />
+    <!-- Testing -->
+    <PackageReference Include="Expecto" Version="10.2.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.15.5" />
+    <Compile Include="src/Test.fs" />
+    <!-- Main entry point -->
+    <Compile Include="src/Program.fs" />
+  </ItemGroup>
+</Project>

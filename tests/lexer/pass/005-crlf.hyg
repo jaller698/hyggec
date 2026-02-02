@@ -1,0 +1,31 @@
+// This file has lines ending with \r\n (as Microsoft Windows text files)
+* +
+and or not
+= <
+if then else
+( )
+{ }
+; :
+readInt readFloat
+print println
+assert
+let
+anIdentifier
+anIdentifier2 anIdentifier3
+_anotherIdentifier	__yetAnother
+_123yetAnotherIdentifier
+truexx xxtrue
+printyy yyprint
+assertzz zzassert
+true false
+123456
+12.34f 12.34e10f 0.34E-42f 0.33e+6f .1E2f 12.f
+"A string"
+"Another string with \"quotes\" inside"
+()
+1 + 2
+1+ x
+1 +x
+1+x
+1 + 2 // @ Invalid if tokenized
+// 1 + 2
